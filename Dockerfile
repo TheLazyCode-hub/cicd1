@@ -1,6 +1,7 @@
 FROM  cen:latest
 MAINTAINER gauravshukla005522@gmail.com
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+#ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page275/roxy.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
 RUN cp -rvf photogenic/* .

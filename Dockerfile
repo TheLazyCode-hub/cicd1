@@ -23,11 +23,11 @@
 
 FROM  cen:latest
 MAINTAINER gauravshukla005522@gmail.com
-ADD roxy.zip /var/www/html/
+ADD shine.zip /var/www/html/
 WORKDIR /var/www/html/
-RUN unzip roxy.zip
-RUN cp -rvf roxy/* .
-RUN rm -rf roxy roxy.zip
+RUN unzip shine.zip
+RUN cp -rvf shine/* .
+RUN rm -rf shine shine.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
  
